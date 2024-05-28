@@ -31,6 +31,16 @@ $this->extend('layout/main');
     <div id="nom-modification-animal" ><a>Nom</a>
     <input type="text" id ="nomAnimal" readonly value=  <?php echo $unAnimal[0]["NOM_ANIMAL"];?>></div>
 
+    <form action="process.php" method="post">
+        <label for="ville">Ville:</label>
+        <input type="text" id="ville" name="ville" required>
+
+        <label for="lossDate">Date de perte:</label>
+        <input type="date" id="lossDate" name="lossDate" required>
+
+        <label for="circonstances">Circonstances de la perte:</label>
+        <textarea id="circonstances" name="circonstances" rows="5" cols="30" required></textarea>
+
     
 
     <input id="validation-modification-animal" type="submit" value="Valider">

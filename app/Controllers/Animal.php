@@ -122,7 +122,10 @@ class Animal extends BaseController
             "PHOTO_ANIMAL" =>  $this ->request->getPost('adresse'),
             "SEXE_ANIMAL" =>  $this ->request->getPost('sexe'),
             "ESPECE_ANIMAL" =>  $this ->request->getPost('espece'),
-            "RACE_ANIMAL" =>  $this ->request->getPost('race')
+            "RACE_ANIMAL" =>  $this ->request->getPost('race'),
+            "VILLE_ANIMAL" => $this ->request->getPost('ville'),
+            "DATE_PERTE_ANIMAL" => $this ->request->getPost('lossDate'),
+            "CIRCONSTANCE_PERTE_ANIMAL" => $this ->request->getPost('circonstance')
         ];
         $registre = new proprio();
         $registre->insert($arr);

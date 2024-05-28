@@ -54,6 +54,9 @@
             <label for="Signes"><b>Signes particuliers</b></label>
             <input type="text" placeholder="Entrer signes" name="signes" id="signes" required>
 
+            <label for="age"><b>age</b></label>
+            <input type="text" placeholder="Entrer age" name="age" id="age" required>
+
             <label for="pet-select">Sélectionnez un propriétaire:</label>
 
             <select name="proprietaire" id="proprietaire">
